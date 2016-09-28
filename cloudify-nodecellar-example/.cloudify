@@ -1,0 +1,14 @@
+!WD_Settings
+_management_ip: 11.0.0.7
+_management_key: null
+_management_user: null
+_mgmt_aliases: {}
+_mgmt_to_contextual_aliases: {}
+_provider: !!python/unicode 'cloudify_simple_provider'
+_provider_context:
+  !!python/unicode 'cloudify':
+    !!python/unicode 'cloudify_agent': {!!python/unicode 'agent_key_path': !!python/unicode '~/.ssh/cloudify-agents-kp.pem',
+      !!python/unicode 'max_workers': 5, !!python/unicode 'min_workers': 2, !!python/unicode 'remote_execution_port': 22,
+      !!python/unicode 'user': !!python/unicode 'vagrant'}
+    !!python/unicode 'resources_prefix': !!python/unicode ''
+    !!python/unicode 'workflows': {!!python/unicode 'task_retries': -1, !!python/unicode 'task_retry_interval': 30}
