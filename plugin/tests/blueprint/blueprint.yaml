@@ -1,4 +1,4 @@
-# DSL version, should appear in the main blueprint.yaml
+    # DSL version, should appear in the main blueprint.yaml
 # and may appear in other imports. In such case, the versions must match
 tosca_definitions_version: cloudify_dsl_1_3
 
@@ -9,7 +9,8 @@ imports:
     # instead.
     - http://www.getcloudify.org/spec/cloudify/4.0m4/types.yaml
     # relative import of plugin.yaml that resides in the blueprint directory
-    - plugin/test_plugin.yaml
+    
+    - https://github.com/jmadtha/ce-cloudify-bora/blob/master/plugin/tests/blueprint/plugin/test_plugin.yaml
 
 inputs:
     # example input that could be injected by test
